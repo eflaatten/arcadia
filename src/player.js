@@ -1,11 +1,9 @@
 const player = document.getElementById('platform')
 
-// Assuming the platform's width is 100px
 const platformWidth = 130;
 const platformHeight = 20;
 const windowWidth = window.innerWidth;
 
-// Calculate the starting left position to center the platform
 const startingLeft = (windowWidth / 2) - (platformWidth / 2);
 
 player.style.left = `${startingLeft}px`;
@@ -39,11 +37,10 @@ const checkCollisionWithPlatform = (ballX, ballY) => {
     const platformLeft = parseInt(player.style.left, 10);
     const platformRight = platformLeft + platformWidth;
 
-    // Assuming ball's diameter is 20px for this calculation
     const ballDiameter = 20;
-    const ballBottom = ballY + ballDiameter; // Calculate the ball's bottom edge position
+    const ballBottom = ballY + ballDiameter;
 
-    const yCollision = ballBottom >= platformTop; // Adjusted to check ball's bottom edge against platform's top
+    const yCollision = ballBottom >= platformTop; 
     const xCollision = ballX + ballDiameter >= platformLeft && ballX <= platformRight;
 
     return yCollision && xCollision;
