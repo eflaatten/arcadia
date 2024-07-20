@@ -1,7 +1,17 @@
-const startGameBtn = document.getElementById('start-game')
+const brickBreaker = () => {
+    console.log('Launching Brick Breaker...')
 
-const startGame = () => {
-    console.log('Game starting...')
+    window.location.href = './brickBreaker.html'
+}
 
-    window.location.href = './game.html'
+const towersOfHanoi = () => {
+    console.log('Launching Towers of Hanoi...')
+
+    window.location.href = './towersOfHanoi.html'
+}
+
+const ticTacToe = () => {
+    console.log('Launching Tic Tac Toe...')
+
+    window.location.href = './TTT.html'
 }

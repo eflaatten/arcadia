@@ -7,7 +7,7 @@ let isMoving = false;
 const moveBall = () => {
     let x = ball.offsetLeft;
     let y = ball.offsetTop;
-    const speed = 1.5;
+    const speed = 2;
 
     let dx = 2 * speed;
     let dy = -2 * speed;

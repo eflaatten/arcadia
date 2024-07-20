@@ -10,7 +10,7 @@ player.style.left = `${startingLeft}px`;
 
 let moveLeft = false
 let moveRight = false
-const speed = 5
+const speed = 7
 
 window.addEventListener('keydown', (e) => {
     if(e.key === 'ArrowRight') moveRight = true

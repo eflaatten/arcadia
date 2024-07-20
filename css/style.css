@@ -2,36 +2,55 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 h1 {
-    font-family: 'ArcadeClassic', sans-serif;
-    color: red;
-    text-align: center;
-    margin-top: 250px;
-    font-size: 100px;
-    position: absolute;
-    top: 0;
-}
-
-#start-game{
+    grid-column: 2/3;
+    grid-row: 1/2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 span {
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 100px;
+    animation: colorCycle 1.5s infinite;
+}
+
+@keyframes colorCycle {
+    0% { color: red; }
+    25% { color: yellow; }
+    50% { color: blue; }
+    75% { color: green; }
+    100% { color: red; }
+}
+
+.game-options {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+    padding: 20px; 
+}
+
+.game-option {
     font-family: 'ArcadeClassic', sans-serif;
     color: rgb(255, 255, 255);
     background-color: transparent;
-    border: none;
-    font-size: 50px;
-    transition: 0.2s;
+    border: 2px solid white; /* Example styling */
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#start-game:hover {
-    cursor: pointer;
-    font-size: 54px;
-    color: aliceblue;
-    transition: 0.2s;
+.game-option:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
 }

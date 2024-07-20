@@ -1,4 +1,5 @@
 import { moveBall, isMoving } from "./ball.js";
+import { checkCollisionWithBrick } from "./collision.js";
 
 let lastRenderTime = 0
 
@@ -14,6 +15,7 @@ const gameLoop = (currentTime) => {
     if(isMoving){
         moveBall()
     }
+
 }
 
 requestAnimationFrame(gameLoop)
