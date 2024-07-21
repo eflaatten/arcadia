@@ -103,37 +103,15 @@ const checkForWin = () => {
 
 const horizontalWin = () => {
   return (
-    (board[0][0] === currentMarker &&
-      board[0][1] === currentMarker &&
-      board[0][2] === currentMarker) ||
-    (board[1][0] === currentMarker &&
-      board[1][1] === currentMarker &&
-      board[1][2] === currentMarker) ||
-    (board[2][0] === currentMarker &&
-      board[2][1] === currentMarker &&
-      board[2][2] === currentMarker)
-  );
+    (board[0][0] === currentMarker && board[0][1] === currentMarker && board[0][2] === currentMarker) ||
+    (board[1][0] === currentMarker && board[1][1] === currentMarker &&  board[1][2] === currentMarker) ||
+    (board[2][0] === currentMarker &&  board[2][1] === currentMarker &&  board[2][2] === currentMarker));
 };
 const verticalWin = () => {
   return (
-    (board[0][0] === currentMarker &&
-      board[1][0] === currentMarker &&
-      board[2][0] === currentMarker) ||
-    (board[0][1] === currentMarker &&
-      board[1][1] === currentMarker &&
-      board[2][1] === currentMarker) ||
-    (board[0][2] === currentMarker &&
-      board[1][2] === currentMarker &&
-      board[2][2] === currentMarker)
-  );
+    (board[0][0] === currentMarker && board[1][0] === currentMarker &&  board[2][0] === currentMarker) || (board[0][1] === currentMarker &&  board[1][1] === currentMarker &&  board[2][1] === currentMarker) ||
+    (board[0][2] === currentMarker &&  board[1][2] === currentMarker &&  board[2][2] === currentMarker));
 };
 const diagonalWin = () => {
-  return (
-    (board[0][0] === currentMarker &&
-      board[1][1] === currentMarker &&
-      board[2][2] === currentMarker) ||
-    (board[0][2] === currentMarker &&
-      board[1][1] === currentMarker &&
-      board[2][0] === currentMarker)
-  );
+  return ((board[0][0] === currentMarker &&board[1][1] === currentMarker &&board[2][2] === currentMarker) || (board[0][2] === currentMarker &&board[1][1] === currentMarker &&board[2][0] === currentMarker));
 };

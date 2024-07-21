@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #002f6d;
+    --header: rgb(188, 0, 0);
+    --alphabet-table: white;
+    --alphabet-table-hover: #ff0400;
+    --game-start: green;
+    --reset: red;
+  }
+  
+  body {
+    background-color: var(--primary-color);
+  }
+  
+  header h1 {
+    font-family: "Briem Hand", cursive;
+    color: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+  }
+  .alphabet-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #alphabet-table td {
+    padding: 10px;
+    font-family: "Jersey 15", sans-serif;
+    color: var(--alphabet-table);
+    font-size: 50px;
+    transition: 0.2s;
+  }
+  
+  #alphabet-table td:hover {
+    color: var(--alphabet-table-hover);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  #noose-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #game-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    background-color: var(--game-start);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #game-restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: none;
+    background-color: var(--reset);
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  
+  #game-restart:hover {
+    cursor: pointer;
+    padding: 11px;
+    transition: 0.2s;
+  }
+  
+  
+  #game-start:hover {
+    cursor: pointer;
+    padding: 11px;
+    transition: 0.2s;
+  }
+  
+  #word-spaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    font-size: 7em; 
+  }
+  
+  #word-spaces span {
+    margin: 0 10px;
+    color: black;
+    font-family: "Jersey 15", sans-serif;
+  }
+  
+  .win-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: "Briem Hand", cursive;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: green;
+  }
+  
+  .lost-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: "Briem Hand", cursive;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: red;
+  }
+  
