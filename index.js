@@ -13,7 +13,7 @@ const towersOfHanoi = () => {
 const ticTacToe = () => {
     console.log('Launching Tic Tac Toe...')
 
-    window.location.href = '/TTT/pages/index.html'
+    window.location.href = '/ticTacToe/pages/index.html'
 }
 
 const hangman = () => {
